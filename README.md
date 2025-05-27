@@ -174,6 +174,44 @@ It is strongly recommended to pin the version of the dependencies.
 
     When a method is published, it appears in the Methods Hub gallery and (from next day) is searchable through GESIS Search.
 
+1.  What are the differences between code by `knitr` and `jupyter`?
+
+    There is one subtle, but important, difference between the code execution between `knitr` (the default renderer for R code in `quarto`) and jupyter. For example, this R code block (see the provided file `code_exec.qmd`)
+
+    ````
+    ```{r}
+    mean(mtcars$mpg)
+    plot(mtcars$mpg, mtcars$wt)
+    ```
+    ````
+
+    When rendering this into notebook by [Quarto] using
+
+    ```sh
+    quarto render code_exec.qmd --to=ipynb
+    ```
+
+    All code blocks will be rendered but also will get modified with the plotting line removed. It's not ideal. So, there two ways to fix this:
+
+    Convert it is by using `quarto convert` instead to generate an empty ipynb.
+
+    ```sh
+    quarto convert code_exec.qmd -o code_exec.ipynb
+    ```
+
+    Or, to split the code block into one line per block. And for the plot code, you must add the execution option. Only in this case, `quarto render` will not eat the visualization code.
+
+    ````
+    ```{r}
+    mean(mtcars$mpg)
+    ```
+
+    ```{r}
+    #| echo: true
+    plot(mtcars$mpg, mtcars$wt)
+    ```
+    ````
+
 ## Contact
 
 Methods Hub Team &lt;[methodshub@gesis.org][methodshub-email]&gt;
