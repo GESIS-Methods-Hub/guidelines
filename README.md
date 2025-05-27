@@ -66,6 +66,64 @@ You can suggest further venues by mail to the [Methods Hub team][methodshub-emai
 - [ ] The method code contains documentation (comments) for parameters and decisions that allows one to adjust the method.
 - [ ] The method code is structured into modules (if need be).
 
+## Binder environment
+
+These binder configuration files can be located at the root level or in a directory named `.binder` or `binder`. In the following sections, we will assume these files to be located in `binder`.
+
+Specifically for the Methods Hub, the following files **must** be available among the binder configuration files:
+
+1. `binder/postBuild` file that facilitates Quarto installation. The `postBuild` can be downloaded from https://methodshub.gesis.org/snippet/postBuild/.
+2. configuration files that record the computational environment, e.g. dependencies. See the following sections on how to create these files for different programming languages.
+
+### Python
+
+Create `binder/requirements.txt` using `pip`.
+
+```bash
+python3 -m pip freeze > binder/requirements.txt
+```
+
+The `binder/requirements.txt` should look like [`binder-examples/python/requirements.txt`](binder-examples/python/requirements.txt).
+
+It is strongly recommended to pin the version of the dependencies.
+
+### R
+
+`install.packages()` or similar commands for installing R packages (e.g. `pak::pkg_install()`, `devtools::install_github()`) should **not** be called from the tutorial source file (e.g. `qmd`, `rmd`, or `.ipynb`).
+
+Instead, create `binder/runtime.txt` (which contains the current R version and a snapshot date) and `binder/install.R`.
+
+```bash
+## Record the current R version and use the current date as the snapshot date
+Rscript -e "writeLines(paste0('r-', getRversion(), '-', format(Sys.time(), '%Y-%m-%d')), 'binder/runtime.txt')" 
+```
+
+And add `install.packages()` calls to `binder/install.R`. The `binder/install.R` should look like [`binder-examples/r/install.R`](binder-examples/r/install.R).
+
+Although allowed, there are no need to pin the version with tools such as `renv` because [P3M](https://posit.co/products/cloud/public-package-manager/) is used when creating a binder environment. It will install the latest version of R packages according to the snapshot date recorded in `runtime.txt`.
+
+If there is a need to illustrate the installation process using `install.packages()` or similar commands for installing R packages, set the code block to `eval: false` as illustrated in [`template.qmd`](template.qmd).
+
+### Many languages (conda)
+
+If you use `conda` to configure your computational environment, create `binder/environment.yml` with
+
+```bash
+## Export the current active environment
+conda env export > binder/environment.yml
+```
+
+or
+
+```bash
+## Export a specific environment, e.g. environment-name
+conda env export -n environment-name > binder/environment.yml
+```
+
+The `binder/environment.yml` should look like [`binder-examples/conda/environment.yml`](binder-examples/conda/environment.yml).
+
+It is strongly recommended to pin the version of the dependencies.
+
 ## Frequently asked questions
 
 1.  What is the Methods Hub?
