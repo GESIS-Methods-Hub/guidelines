@@ -2,7 +2,7 @@
 
 Here you will find the guidelines used by Methods Hub.
 
-The Methods Hub aims to provide high-quality and easy-to-use computer science methods and tutorials to social scientists. Offering such resources through the Methods Hub makes them directly available to the target audience. However, the Methods Hub only accepts resources that follow the principles of open science, that are available in a format that is accessible for social scientists, and that are relevant for social science research. A special focus of the Methods Hub is on resources that work on [digital behavioral data](https://www.gesis.org/en/institute/about-us/digital-behavioral-data), but also other resources are welcome.
+The Methods Hub aims to provide high-quality and easy-to-use computational methods and tutorials to social scientists. Offering such resources through the Methods Hub makes them directly available to the target audience. However, the Methods Hub only accepts resources that follow the principles of open science, that are available in a format that is accessible for social scientists, and that are relevant for social science research. A special focus of the Methods Hub is on resources that work on [digital behavioral data](https://www.gesis.org/en/institute/about-us/digital-behavioral-data), but also other resources are welcome.
 
 A method for the Methods Hub is a sequence of instructions that a computer should execute to perform a specific task and that is bundled for reusability, as well as its documentation.
 
