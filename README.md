@@ -130,9 +130,9 @@ It is strongly recommended to pin the version of the dependencies.
 
     The Methods Hub is an infrastructure platform that provides openly accessible, reusable computational methods for working with digital behavioral data in social science research.
 
-1.  Who can submit a method to the Methods Hub?
+1.  Who can submit a method or tutorial to the Methods Hub?
 
-    Researchers, practitioners, and developers in computational social science, computer science, natural language processing and related fields can submit methods.
+    Researchers, practitioners, and developers in computational social science, computer science, natural language processing and related fields can submit methods or tutorial.
 
 1.  Can I publish my computational method on Methods Hub?
 
@@ -146,9 +146,9 @@ It is strongly recommended to pin the version of the dependencies.
 
     The platform supports open languages such as Python and R, but not commercial tools like MATLAB or SPSS.
 
-1.  Can I publish my method using paid API or tool?
+1.  Can I publish my method or tutorial using paid API or tool?
 
-    No, the methods on Methods Hub must be fully resusable with all resources used by the method including APIs, packages being openly accessible to all.
+    No, the methods or tutorial on Methods Hub must be fully resusable with all resources used by the method including APIs, packages being openly accessible to all.
 
 1.  What if my method is already published in a peer-reviewed journal?
 
@@ -162,9 +162,9 @@ It is strongly recommended to pin the version of the dependencies.
 
     Yes, you can write a tutorial about other developers methods as your contribution. You can also write tutorials about methods not published on Methods Hub but are of interest to the Methods Hub audience. For more details, please visit the method guide and template.
 
-1.  Where should the method code be hosted?
+1.  Where should the method or tutorial code be hosted?
 
-    The method must be publicly accessible on GitHub.
+    The method or tutorial must be publicly accessible from a Git repository, this includes GitHub, GitLab and others.
 
 1.  What happens when I submit my method?
 
