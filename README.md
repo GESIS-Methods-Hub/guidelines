@@ -174,7 +174,7 @@ It is strongly recommended to pin the version of the dependencies.
 
     When a method is published, it appears in the Methods Hub gallery and (from next day) is searchable through GESIS Search.
 
-1.  What are the differences between code by `knitr` and `jupyter`?
+1.  What are the differences between code processed by `knitr` and `jupyter`?
 
     There is one subtle, but important, difference between the code execution between `knitr` (the default renderer for R code in `quarto`) and jupyter. For example, this R code block (see the provided file `code_exec.qmd`)
 
