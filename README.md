@@ -136,7 +136,7 @@ It is strongly recommended to pin the version of the dependencies.
 
 1.  Can I publish my computational method on Methods Hub?
 
-    Yes, only if it is open access and open licensed, applies to a social science use case/research question and is applicable to Digital behavioral data.
+    Yes, only if it is open access and open licensed, and belongs to a relevant task of the [Tasks Taxonomy].
 
 1.  How can I increase my chances of getting my method published?
 
