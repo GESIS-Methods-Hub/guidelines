@@ -48,8 +48,8 @@ Each method or tutorial submitted to the [Methods Hub](https://methodshub.gesis.
   | --- | --- | --- | --- |
   | [Quarto](https://quarto.org/) | `.qmd` | [`tutorial/template.qmd`](tutorial/template.qmd) | |
   | [Jupyter Notebook Format](https://nbformat.readthedocs.io/en/latest/index.html) | `.ipynb` | [`tutorial/template.ipynb`](tutorial/template.ipynb) | Limited to a single programming language. |
-  | [R Markdown](https://rmarkdown.rstudio.com/) | [`tutorial/template.rmd`](tutorial/template.rmd) | `.rmd` | If possible, should be ported to Quarto. |
-  | [(Pandoc) Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown) | [`tutorial/template.md`](tutorial/template.md) | `.md` | |
+  | [R Markdown](https://rmarkdown.rstudio.com/) |`.rmd` | | If possible, should be ported to Quarto. |
+  | [(Pandoc) Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown) | `.md` | | |
   
 - [ ] All examples in the method or tutorial repository can be reproduced with reasonable accuracy using only publicly available resources.
 
@@ -102,7 +102,7 @@ And add `install.packages()` calls to `binder/install.R`. The `binder/install.R`
 
 Although allowed, there are no need to pin the version with tools such as `renv` because [P3M](https://posit.co/products/cloud/public-package-manager/) is used when creating a binder environment. It will install the latest version of R packages according to the snapshot date recorded in `runtime.txt`.
 
-If there is a need to illustrate the installation process using `install.packages()` or similar commands for installing R packages, set the code block to `eval: false` as illustrated in [`template.qmd`](template.qmd).
+If there is a need to illustrate the installation process using `install.packages()` or similar commands for installing R packages, set the code block to `eval: false` as illustrated in [`tutorial/template.qmd`](tutorial/template.qmd).
 
 ### Many languages (conda)
 
