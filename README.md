@@ -160,7 +160,7 @@ It is strongly recommended to pin the version of the dependencies.
 
 1.  Can I write tutorial about someone else's method?
 
-    Yes, you can write a tutorial about other developers methods as your contribution. You can also write tutorials about methods not published on Methods Hub but are of interest to the Methods Hub audience. For more details, please visit the method guide and template.
+    Yes, you can write a tutorial about other developers methods as your contribution. You can also write tutorials about methods not published on Methods Hub but are of interest to the Methods Hub audience.
 
 1.  Where should the method or tutorial code be hosted?
 
