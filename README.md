@@ -144,7 +144,7 @@ It is strongly recommended to pin the version of the dependencies.
 
 1.  Which programming languages are supported?
 
-    The platform supports **only** open languages such as Python and R.
+    The platform supports **only** open source programming languages such as Python and R.
 
 1.  Can I publish my method or tutorial using paid API or tool?
 
