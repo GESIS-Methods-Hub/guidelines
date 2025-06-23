@@ -13,6 +13,7 @@ Title:
 1. The title must be the README's only first-level heading (line starting with a single '#').
 2. The title should make the method's purpose clear.
 3. The title (line 1 of this file) must be changed by you, but all other headings should be kept as they are.
+4. The title must be appropriate (not harmful, derogatory, etc.).
 
 Section templates:
 The README template comes with text templates for each section (after each comment) that can be used, customized or removed as desired.
