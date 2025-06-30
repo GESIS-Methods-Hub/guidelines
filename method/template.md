@@ -111,7 +111,7 @@ value 2-1,value 2-2
 1. The hardware requirements section should list all requirements (storage, memory, compute, GPUs, cluster software, ...) that exceed the capabilities of a cheap virtual machine provided by cloud computing company (2 x86 CPU core, 4 GB RAM, 40GB HDD).
 2. If the method requires a GPU, the hardware requirements section must list the minimal GPU requirements (especially VRAM).
 -->
-METHOD runs on a cheap virtual machine provided by cloud computing company (2 x86 CPU core, 4 GB RAM, 40GB HDD).
+METHOD runs on a small virtual machine provided by a cloud computing company (2 x86 CPU core, 4 GB RAM, 40GB HDD).
 METHOD requires a GPU (compute capability XXX, XXX GB VRAM) to run.
 
 ## Environment Setup
