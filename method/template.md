@@ -44,10 +44,10 @@ METHOD requires a GPU.
 ## Use Cases
 <!--
 1. The use cases section should contain a list of use cases relevant to the social sciences.
-2. Each use case should start with a description of a person, continues with a description of a task the person has, and then details how the person uses the method to assist in the task.
+2. Each use case should start with a description of a task and then detail how one can use the method to assist in the task.
 3. Each use case may list publications in which the use case occurs (e.g., in APA7 style, https://apastyle.apa.org/style-grammar-guidelines/references/examples).
 -->
-- A XXX wants to do XXX. Their situation is that XXX. They use METHOD by doing XXX to do XXX, which solves their original problem because XXX.
+- Doing XXX. One can use METHOD by doing XXX to achieve XXX.
 
   Example publications that illustrate this use case:
 
