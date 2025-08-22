@@ -32,7 +32,7 @@ Each method or tutorial submitted to the [Methods Hub](https://methodshub.gesis.
 
 #### Documentation quality criteria
 
-- [ ] The method or tutorial repository contains the [necessary files for setting up a binder environment](https://mybinder.readthedocs.io/en/latest/using/config_files.html) for Methods Hub.
+- [ ] The method or tutorial repository contains the [necessary files for setting up a binder environment](https://mybinder.readthedocs.io/en/latest/examples/sample_repos.html#managing-languages) for Methods Hub.
   - [ ] The method or tutorial repository contains the configuration files for installing all requirements (e.g., `environment.yml`, `requirements.txt`, `install.R`).
   - [ ] The method or tutorial repository contains the [postBuild](https://methodshub.gesis.org/snippet/postBuild) file that facilitates Quarto installation.
   - [ ] The binder environment is set up without errors.
