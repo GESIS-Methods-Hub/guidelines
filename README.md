@@ -100,7 +100,7 @@ Rscript -e "writeLines(paste0('r-', getRversion(), '-', format(Sys.time(), '%Y-%
 
 And add `install.packages()` calls to `binder/install.R`. The `binder/install.R` should look like [`binder-examples/r/install.R`](binder-examples/r/install.R).
 
-Currently, we do not support the tool `renv` to pin the version. Using such tools to pin the version is also not neccessary, becasue [P3M](https://posit.co/products/cloud/public-package-manager/) is used when creating a binder environment. It will install the latest version of R packages according to the snapshot date recorded in `runtime.txt`.
+Currently, we do not support the tool `renv` to pin the version. Using such tools to pin the version is also not neccessary, because [P3M](https://posit.co/products/cloud/public-package-manager/) is used when creating a binder environment. It will install the latest version of R packages according to the snapshot date recorded in `runtime.txt`.
 
 If there is a need to illustrate the installation process using `install.packages()` or similar commands for installing R packages, set the code block to `eval: false` as illustrated in [`tutorial/template.qmd`](tutorial/template.qmd).
 
