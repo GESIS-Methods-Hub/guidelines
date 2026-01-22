@@ -18,7 +18,7 @@ Each method or tutorial submitted to the [Methods Hub](https://methodshub.gesis.
 
 - [ ] The method or tutorial is developed in an open-source programming language (e.g., Python or R).
 - [ ] The method or tutorial is publicly accessible in a Git repository.
-  - [ ] If a method, the Git repository has one and only one methods.
+  - [ ] If a method, the Git repository has one and only one method.
 - [ ] The method or tutorial is [published under an open license](https://opensource.guide/legal/#which-open-source-license-is-appropriate-for-my-project).
 
 ### Scoping criteria
