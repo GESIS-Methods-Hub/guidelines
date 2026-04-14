@@ -53,6 +53,30 @@ Each method or tutorial submitted to the [Methods Hub](https://methodshub.gesis.
   
 - [ ] All examples in the method or tutorial repository can be reproduced with reasonable accuracy using only publicly available resources.
 
+### Interactiveness of the Code
+
+To ensure an interactive and exploratory user experience, the submitted method must allow users to actively modify its behaviour by adjusting one or more parameters.
+At least one clearly identifiable section of the code must be designed for user interaction. This section should enable users to change inputs, parameters, or configurations in a way that produces observable differences in the output. If needed make sure to provide a small example dataframe to work with.
+
+The interactive components should follow these principles:
+
+- **Explicit parameter exposure**  
+  Key parameters must be defined in a clearly visible and easily accessible location (e.g., at the top of the script or notebook). Users should not need to search through the codebase to find them.
+
+- **Guided experimentation**  
+  The code should include comments or text cells that explicitly invite users to modify parameters. For example, clearly marked sections such as “Try this” or “Adjust this value” should indicate where interaction is intended.
+
+- **Immediate effect on output**  
+  Changes to parameters must result in observable and meaningful differences in the output (e.g., different model results, plots, classifications, or metrics).
+
+- **Safe and controlled interaction**  
+  Parameter ranges and expected inputs should be documented to prevent errors and ensure that users can experiment without breaking execution.
+
+- **Minimal barrier to interaction**  
+  Users should be able to modify parameters and re-run the method without requiring additional setup, installations, or structural changes to the code.
+
+The goal of this requirement is to transform static example code into an interactive environment in which users can explore how the method behaves under different conditions to support deeper understanding, facilitate learning, and enable practical evaluation of the method.
+
 #### Code quality criteria
 
 The code quality criteria can be skipped for methods for which a paper is published by the following [trusted third-party review venues](guidelines.md#trusted-third-party-review-venues).
